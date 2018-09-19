@@ -1,0 +1,22 @@
+Hacer BOM csv
+Primero descargar el siguiente comprimido.
+Luego, descomprimirlo y recordar el path donde se descomprimió.
+En el esquemático apretar el boton BOM.
+Saldrá una ventana.
+“Add Pluggin”
+Buscar dentro de los archivos descomprimidos el archivo: bom_csv_grouped_by_value.py
+
+Automáticamente se llenará la linea de comandos “Command line”.
+
+Aparecerá lo siguiente:
+python “<path_donde_esta_el_archivo>/bom_csv_grouped_by_value.py” “%I” “%O”
+
+Editarlo:
+python “<path_donde_esta_el_archivo>/bom_csv_grouped_by_value.py” “%I” “%O.csv”
+
+/*Recordar que son necesarios los archivos
+   bom_csv_grouped_by_value.py y
+   kicad_netlist_reader.py.*/
+
+Si tira error en la linea 60 de este archivo, abrirlo y comentar la misma linea. Esto ponía la fecha en el BOM pero no hace falta ;).
+
